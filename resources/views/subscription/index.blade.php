@@ -1,6 +1,6 @@
 @extends('template.default')
 
-
+@section('title', '|' . ' Home')
 
 @section('content')
 
@@ -9,33 +9,8 @@
 	<p>You are subscribed!</p>
 
 @else
-	<p>Ooops!! Please Subscribe <a href="#"> Here.</a></p>
+	<p>Ooops!! Please Subscribe <a href="{{ route('subscription-join') }}"> Here.</a></p>
 @endif
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 @endsection
